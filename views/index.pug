@@ -1,0 +1,22 @@
+extends layout
+
+block layout-content
+  div.View.WelcomeView
+    h1.Banner TWINALYTICS
+    div.Message
+      div.Title
+        h3 Provide stats for your twitter account
+        h1 For real
+      span.Details Try for free  +14 days
+    div.Message
+      div.Title
+        h3 Provide stats for your twitter account
+        h1 For real
+      span.Details Try for free  +14 days
+    div.NavButtons
+      if isAuthenticated
+        a(href="/user")
+          div.NavButton Just dive in!
+      else
+        a(href="/login")
+          div.NavButton Log in
